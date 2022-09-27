@@ -6,7 +6,7 @@ import loadTwitchTokenFromRedis from '../utils/loadTwitchTokenFromRedis.js';
 export const fetchTwitch = async (req, res) => {
   let twitch_access_token = await loadTwitchTokenFromRedis();
   const promiseData = await fetch(
-    'https://api.twitch.tv/helix/users?id=141981764',
+    `https://api.twitch.tv/helix/users?id=${process.env.TWITCH_BROADCASTER_ID_TEST}`,
     {
       method: 'GET',
       headers: {

@@ -4,6 +4,7 @@ import {
   getNewToken,
   handleEventSub,
   fetchTwitch,
+  createSub,
 } from './utils/controllers.js';
 // import fetchTwitch from './utils/fetchTwitch.js';
 const app = express();
@@ -13,6 +14,7 @@ app.get('/', (req, res) => {
   res.send('hello world');
 });
 app.get('/fetchTwitch', fetchTwitch);
+app.get('/createSub', createSub);
 
 app.post('/testHandler', testHandler);
 app.post('/token', getNewToken);

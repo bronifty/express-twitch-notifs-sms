@@ -1,3 +1,4 @@
+export { fetchTwitch } from './fetchTwitch.js';
 export const testHandler = async (req, res) => {
   // const hostUrl = req.headers['x-forwarded-host'];
   try {

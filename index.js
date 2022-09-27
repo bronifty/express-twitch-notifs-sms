@@ -3,8 +3,9 @@ import {
   testHandler,
   getNewToken,
   handleEventSub,
+  fetchTwitch,
 } from './utils/controllers.js';
-import fetchTwitch from './utils/fetchTwitch.js';
+// import fetchTwitch from './utils/fetchTwitch.js';
 const app = express();
 
 // respond with "hello world" when a GET request is made to the homepage

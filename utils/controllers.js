@@ -1,5 +1,6 @@
 export { fetchTwitch } from './fetchTwitch.js';
 export { createSub } from './createSub.js';
+export { handleEventSub } from './handleEventSub.js';
 
 export const testHandler = async (req, res) => {
   // const hostUrl = req.headers['x-forwarded-host'];
@@ -27,16 +28,16 @@ export const getNewToken = async (req, res) => {
     // await closeDb();
   }
 };
-export const handleEventSub = async (req, res) => {
-  // const hostUrl = req.headers['x-forwarded-host'];
-  try {
-    // console.log('JSON.parse(req.headers): ', hostUrl);
-    // await connectDb(uri);
-    // const tasks = await Task.find({});
-    res.status(200).json({ hello: 'handleEventSub' });
-  } catch (error) {
-    res.status(500).json({ msg: error });
-  } finally {
-    // await closeDb();
-  }
-};
+// export const handleEventSub = async (req, res) => {
+//   // const hostUrl = req.headers['x-forwarded-host'];
+//   try {
+//     // console.log('JSON.parse(req.headers): ', hostUrl);
+//     // await connectDb(uri);
+//     // const tasks = await Task.find({});
+//     res.status(200).json({ hello: 'handleEventSub' });
+//   } catch (error) {
+//     res.status(500).json({ msg: error });
+//   } finally {
+//     // await closeDb();
+//   }
+// };

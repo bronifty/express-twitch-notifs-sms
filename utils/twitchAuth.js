@@ -16,3 +16,12 @@ const getAccessTokenPromise = async () => {
 };
 
 export default getAccessTokenPromise;
+
+// {
+// 	"access_token": "ybhmuhm46re3fnxqs9ty6are8qjkgn",
+// 	"expires_in": 5441315,
+// 	"token_type": "bearer"
+// }
+let t = new Date();
+let expiryDateTime = new Date(t.setSeconds(t.getSeconds() + 5441315));
+console.log('expiryDateTime: ', expiryDateTime);

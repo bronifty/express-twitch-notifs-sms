@@ -16,3 +16,22 @@ const getAccessTokenPromise = async () => {
 };
 
 export default getAccessTokenPromise;
+
+// {
+// 	"access_token": "ybhmuhm46re3fnxqs9ty6are8qjkgn",
+// 	"expires_in": 5441315,
+// 	"token_type": "bearer"
+// }
+let t = new Date();
+let expiryDateTime = new Date(
+  t.setSeconds(t.getSeconds() + 5441315)
+).toISOString();
+// expiryDateTime.toISOString();
+console.log('expiryDateTime: ', expiryDateTime);
+
+// {
+// 	"access_token": "ybhmuhm46re3fnxqs9ty6are8qjkgn",
+// 	"expires_in": 5441315,
+// 	"token_type": "bearer",
+//   "expiryDateTime": "2021-03-26T21:00:00.000Z"
+// }

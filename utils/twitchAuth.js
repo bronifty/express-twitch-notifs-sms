@@ -18,7 +18,7 @@ const getAccessTokenPromise = async () => {
 export default getAccessTokenPromise;
 
 // {
-// 	"access_token": "ybhmuhm46re3fnxqs9ty6are8qjkgn",
+// 	"access_token": "asdfasdf",
 // 	"expires_in": 5441315,
 // 	"token_type": "bearer"
 // }
